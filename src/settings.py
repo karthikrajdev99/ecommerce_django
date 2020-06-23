@@ -196,9 +196,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Static
 STATIC_URL = '/static/'
 
-# Media Folder Settings
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-# MEDIA_URL = '/media/'
 
-#STRIPE_SECRET_KEY = 'sk_test_3Fuc7aEc0tqHEAOXGEbklMvP00u2aF4qlY'
 STRIPE_SECRET_KEY = os.getenv("STRIPE_SECRET_KEY")
