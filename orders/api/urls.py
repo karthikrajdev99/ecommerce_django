@@ -6,9 +6,8 @@ from orders.api.views import OrdersViewSet, CartViewSet
 # Create a router and register viewsets with it.
 router = DefaultRouter()
 router.register(r'orders', OrdersViewSet)
-router.register(r'cart', CartViewSet)
 
 # The API URLs are now determined automatically by the router.
 urlpatterns = [
-    path(r'^', include(router.urls)),
+    path(r'', include(router.urls)),
 ]

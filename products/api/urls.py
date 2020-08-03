@@ -8,4 +8,4 @@ router = DefaultRouter()
 router.register(r'product', ProductViewSet)
 router.register(r'category', CategoryViewSet)
 
-urlpatterns = [path(r'^', include(router.urls))]
+urlpatterns = [path(r'', include(router.urls))]

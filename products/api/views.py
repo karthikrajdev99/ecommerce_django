@@ -15,8 +15,8 @@ class CategoryViewSet(viewsets.ModelViewSet):
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    lookup_field = "slug"
+
     permission_classes = (IsGetOrIsAdmin,)
 
     filter_backends = [SearchFilter, OrderingFilter]
-    search_fields = ["category__name", "name", "description"]
+    search_fields = ["category__name", "name", "description", "quantity", "price"]

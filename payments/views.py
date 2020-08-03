@@ -15,8 +15,10 @@ def charge_view(request):
     try:
         charge = stripe.Charge.create(
             amount=request.POST.get("amount", ""),
-            currency=request.POST.get("currency", ""),
+            currency="inr",
             source=request.POST.get("source", ""),
+            description="Testing data for ecomerce"
+
         )
         if charge["status"] == "succeeded":
             return HttpResponse(
