@@ -15,8 +15,6 @@ class OrdersViewSet(ModelViewSet):
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
 
-    # GET for admin, POST for authenticated
-    permission_classes = (permissions.IsAuthenticated, IsPostOrIsAdmin, )
 
 class CartViewSet(ModelViewSet):
     """
