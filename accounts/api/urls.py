@@ -3,6 +3,6 @@ from .views import CustomRegisterView
 
 
 urlpatterns = [
-    path("", include("rest_auth.urls")),
-    path("register/", include("rest_auth.registration.urls")),
+    path("", include("dj_rest_auth.urls")),
+    path("register/", include("dj_rest_auth.registration.urls")),
 ]

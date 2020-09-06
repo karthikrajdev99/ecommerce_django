@@ -1,6 +1,6 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
-from rest_auth.serializers import LoginSerializer
+from dj_rest_auth.serializers import LoginSerializer
 
 try:
     from allauth.utils import email_address_exists
