@@ -8,7 +8,7 @@ WORKDIR /code
 COPY . /code
 
 
-RUN rm -rf deployment && pip install -r requirements.txt
+RUN rm -rf deployment && apk add gcc musl-dev libffi-dev openssl-dev python3-dev && pip install -r requirements.txt
 
 # start server
 EXPOSE 8010
