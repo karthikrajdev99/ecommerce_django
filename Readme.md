@@ -1,4 +1,4 @@
-# Django Ecommerce API
+# Django Ecommerce Headless API
 # Introduction
  This repository contains code and notes to get a working django Ecommerce api application
  using Django rest framework and Django rest auth , JWT for authentication and
