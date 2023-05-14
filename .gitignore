@@ -24,6 +24,13 @@ media
 # C extensions
 *.so
 
+# VirtualEnvironment
+pyvenv.cfg
+Scripts/
+share/
+etc/
+include/
+staticfiles/
 # Distribution / packaging
 .Python
 build/

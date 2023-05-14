@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # DEBUG is kept true in production because Django-rest-swagger doesn't work if debug is false  
 DEBUG = True
 
-ALLOWED_HOSTS = ['ecommerce-djangobackend.herokuapp.com']
+ALLOWED_HOSTS = [ ]
 
 
 # Application definition
